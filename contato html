@@ -7,21 +7,21 @@
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background: linear-gradient(to right, #28a745, #2e7d32); /* Gradiente verde */
+            background: linear-gradient(to right, #ffffff, #acffb1);
             margin: 0;
             padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            color: #fff;
+            color: #000000;
         }
 
         .container {
             width: 100%;
-            max-width: 500px;
-            padding: 30px;
-            background-color: #fff;
+            max-width: 400px; /* Reduzido para melhorar a visualização */
+            padding: 20px;
+            background-color: #ffffff;
             border-radius: 10px;
             box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
             box-sizing: border-box;
@@ -29,64 +29,55 @@
 
         h2 {
             text-align: center;
-            font-size: 24px;
-            margin-bottom: 20px;
-            color: #28a745; /* Verde claro */
+            font-size: 20px; /* Reduzido para economizar espaço */
+            margin-bottom: 15px;
+            color: #28a745;
         }
 
         label {
-            font-size: 16px;
+            font-size: 14px; /* Reduzido */
             color: #333;
             display: block;
-            margin-bottom: 8px;
+            margin-bottom: 6px;
         }
 
         input, textarea {
             width: 100%;
-            padding: 12px;
-            margin: 10px 0;
-            border: 1px solid #ddd;
+            padding: 9px; /* Reduzido */
+            margin: 8px 0;
+            border: 1px solid #d5d5d5;
             border-radius: 8px;
-            background-color: #f4f4f4;
-            font-size: 16px;
+            background-color: #ffffff;
+            font-size: 14px; /* Reduzido */
             color: #333;
             transition: all 0.3s ease;
         }
 
         input:focus, textarea:focus {
-            border-color: #28a745; /* Verde claro */
-            background-color: #e9f8e4; /* Fundo verde claro */
+            border-color: #28a745;
+            background-color: #dfdfdf;
             outline: none;
-        }
-
-        .form-group {
-            position: relative;
-        }
-
-        .form-group input::placeholder,
-        .form-group textarea::placeholder {
-            color: #bbb;
         }
 
         button {
             width: 100%;
-            padding: 15px;
-            background-color: #28a745; /* Verde */
+            padding: 12px; /* Reduzido */
+            background-color: #28a745;
             color: white;
             border: none;
             border-radius: 8px;
-            font-size: 18px;
+            font-size: 16px; /* Reduzido */
             cursor: pointer;
             transition: background-color 0.3s ease;
         }
 
         button:hover {
-            background-color: #218838; /* Verde escuro */
+            background-color: #218838;
         }
 
         .form-footer {
             text-align: center;
-            margin-top: 15px;
+            margin-top: 10px;
         }
 
         .form-footer a {
@@ -99,19 +90,20 @@
             text-decoration: underline;
         }
 
-        /* Responsividade para telas pequenas */
-        @media (max-width: 600px) {
+        /* Responsividade para telas muito pequenas */
+        @media (max-width: 400px) {
             .container {
                 width: 90%;
-                padding: 20px;
+                padding: 15px; /* Mais compacto */
             }
 
             h2 {
-                font-size: 20px;
+                font-size: 18px;
             }
 
             input, textarea, button {
-                font-size: 14px;
+                font-size: 12px;
+                padding: 8px; /* Compactar ainda mais */
             }
         }
     </style>
@@ -137,7 +129,7 @@
 
             <div class="form-group">
                 <label for="mensagem">Mensagem</label>
-                <textarea id="mensagem" name="mensagem" rows="5" placeholder="Digite sua mensagem" required></textarea>
+                <textarea id="mensagem" name="mensagem" rows="4" placeholder="Digite sua mensagem" required></textarea>
             </div>
 
             <button type="submit">Enviar</button>
@@ -147,4 +139,4 @@
         </div>
     </div>
 </body>
-</html> 
+</html>
